@@ -1,6 +1,5 @@
 import SectionIntro from "./subComponents/SectionIntro.tsx";
 import {solutionsData} from "../data.ts";
-import blue_check from "../assets/icons/blue_check.svg";
 
 const Solutions = () => {
   return (
@@ -17,11 +16,6 @@ const Solutions = () => {
                 <div className={`w-full flex items-center justify-center p-5 bg-cover bg-center bg-no-repeat h-[380px] md:h-full lg:h-[480px] rounded-3xl ${
                   index % 2 === 0 ? "" : "md:order-2"
                 }`} style={{backgroundImage: `url(${solution.image}`}}>
-                  {/*<img*/}
-                  {/*  src={solution.image}*/}
-                  {/*  alt={solution.heading}*/}
-                  {/*  className="w-full h-auto max-w-[400px]"*/}
-                  {/*/>*/}
                 </div>
                 <div className="w-full p-5">
                   <div className='flex flex-col gap-5 mb-8'>
