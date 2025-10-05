@@ -16,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({
                                          route,
                                        }) => {
   return (
-    <a href={route ? route : "#"} className={className}>
+    <a href={route ? route : "#"} className={`transition duration-300 ${className}`}>
       <span>
         {isImage ? <img src={icon} alt={icon} className="w-4 md:w-6"/> : <span>{icon}</span>}
       </span>

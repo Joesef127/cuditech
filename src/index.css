@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap');
 @import "tailwindcss";
 
+* {
+    box-sizing: border-box;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Syne', sans-serif;
 }
 body {
   font-family: 'Inter', sans-serif;
+}
+
+@layer utilities {
+    @keyframes scroll-row {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-150%); }
+    }
+    .animate-scroll-row {
+        animation: scroll-row 10s linear infinite;
+    }
 }
