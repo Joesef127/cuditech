@@ -5,12 +5,17 @@ import treehouse from "./assets/images/treehouse.svg";
 import razorpay from "./assets/images/razorpay.svg";
 import robot from "./assets/images/robot.svg";
 import doctors from "./assets/images/doctors.svg";
+import art1 from "./assets/images/art1.svg";
+import art3 from "./assets/images/art2.svg";
+import art2 from "./assets/images/art3.svg";
+import art4 from "./assets/images/art4.svg";
+import dp from "./assets/images/dp.svg";
 
 export const navItems = [
-  { name: "Solutions", href: "#solutions" },
-  { name: "About", href: "#about" },
-  { name: "Why Us", href: "#why-us" },
-  { name: "FAQ", href: "#faq" },
+  {name: "Solutions", href: "#solutions"},
+  {name: "About", href: "#about"},
+  {name: "Why Us", href: "#why-us"},
+  {name: "FAQ", href: "#faq"},
 ];
 
 export const sponsorsData = [
@@ -55,3 +60,51 @@ export const solutionsData = [
     ],
   },
 ];
+
+export const statisticsData = [
+  {value: "22+", label: "Company & Startup"},
+  {value: "43+", label: "Project completed"},
+  {value: "4+", label: "Years of Excellence"},
+];
+
+export const whyChoseData = [
+  {
+    image: art1,
+    title: "Secure & Scalable",
+    desc: "Future-ready IT solutions built to grow with your business.",
+    bgColor: "bg-[#1A73E8]"
+  },
+  {
+    image: art2,
+    title: "24/7 Support",
+    desc: "Round-the-clock monitoring and optimisation.",
+    bgColor: "bg-[#FFFFFF]"
+  },
+  {
+    image: art3,
+    title: "Industry Expertise:",
+    desc: "Deep understanding of multiple industries and their challenges.",
+    bgColor: "bg-[#E7ECFC]"
+  },
+  {
+    image: art4,
+    title: "Seamless Integration",
+    desc: "Designed to work smoothly with your existing systems.",
+    bgColor: "bg-[#174EA6]"
+  },
+];
+
+export const testimonialsData = [
+  {
+    text: "The integration was seamless, and the AI insights are spot-on. We finally have clarity on processes that used to be messy and expensive to manage.",
+    name: "Maria L",
+    position: " CTO of a Retail Tech Company",
+    image: dp,
+  },
+  {
+    text: "Switching to [Your SaaS] saved our team countless hours. What used to take days of manual work now happens in minutes. It’s become the backbone of how we run operations",
+    name: "Maria L",
+    position: " CTO of a Retail Tech Company",
+    image: dp,
+  },
+]

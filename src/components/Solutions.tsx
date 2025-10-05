@@ -3,7 +3,7 @@ import {solutionsData} from "../data.ts";
 
 const Solutions = () => {
   return (
-    <div id="solutions" className="w-full py-20">
+    <div id="solutions" className="w-full pt-20 pb-10">
       <div className="w-[90%] max-w-[1200px] mx-auto flex flex-col items-center justify-center">
         <SectionIntro header="Transform your businesses with world-class Solutions"/>
         <div className="w-full flex flex-col items-center justify-center gap-20 mt-10">
