@@ -108,3 +108,26 @@ export const testimonialsData = [
     image: dp,
   },
 ]
+
+export const faqData = [
+  {
+    question: "Who are your solutions for?",
+    answer:
+      "Our solutions are designed for businesses, institutions, and organizations seeking reliable, scalable, and innovative technology to streamline their operations and accelerate growth.",
+  },
+  {
+    question: "Can your solutions integrate with our current systems?",
+    answer:
+      "Yes, our services are built with flexibility in mind. We ensure seamless integration with your existing systems and workflows, minimizing disruptions while enhancing performance.",
+  },
+  {
+    question: "Do you provide ongoing support after deployment?",
+    answer:
+      "Absolutely. We provide continuous maintenance, updates, and technical support to ensure your systems remain efficient and up to date after deployment.",
+  },
+  {
+    question: "Why choose Cuditech Services Limited?",
+    answer:
+      "We combine technical expertise with a deep understanding of business needs to deliver tailored, end-to-end solutions that drive measurable results and long-term success.",
+  },
+];

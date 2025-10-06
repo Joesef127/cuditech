@@ -6,7 +6,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-center w-full shadow-sm overflow-hidden">
+    <div className="flex items-center justify-center w-full shadow-sm overflow-hidden sticky top-0 bg-white z-50">
       <div className="w-[95%] max-w-[1200px] mx-auto flex items-center justify-between py-6">
         <h1 className="text-[32px] md: lg:text-[40px] leading-[110%] tracking-[-3%] align-middle font-bold">
           <a href="#">Cuditech</a>

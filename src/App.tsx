@@ -4,6 +4,7 @@ import SponsorRow from "./components/SponsorRow.tsx";
 import Solutions from "./components/Solutions.tsx";
 import About from "./components/About.tsx";
 import WhyChose from "./components/WhyChose.tsx";
+import FAQ from "./components/FAQ.tsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Solutions />
       <About />
       <WhyChose />
+      <FAQ />
     </div>
   );
 }

@@ -6,7 +6,7 @@ const WhyChose = () => {
     <div id="why-us" className="w-full py-20">
       <div className="w-[90%] max-w-[1200px] mx-auto flex flex-col items-center justify-center">
         <SectionIntro header="Why Choose Us" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 mt-10">
           {whyChoseData.map((item, index) => {
             // Custom grid placement
             let gridStyles = "";
@@ -49,8 +49,8 @@ const WhyChose = () => {
           })}
         </div>
       </div>
-      <div className=" py-20 bg-[#F9F9F9] w-full">
-        <div className="w-[90%] max-w-[1200px] mx-auto flex flex-col items-center justify-center">
+      <div className="py-20 bg-[#F9F9F9] w-full">
+        <div className="w-[90%] max-w-[1200px] mx-auto flex flex-col items-center justify-center gap-16">
           <SectionIntro
             header="What Clients say about us"
             customClass="max-w-[637px]"
