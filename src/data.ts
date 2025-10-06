@@ -131,3 +131,25 @@ export const faqData = [
       "We combine technical expertise with a deep understanding of business needs to deliver tailored, end-to-end solutions that drive measurable results and long-term success.",
   },
 ];
+
+export const footerNavItems = [
+  {name: "Terms", href: "#terms"},
+  {name: "Privacy", href: "#privacy"},
+  {name: "Cookies", href: "#cookies"},
+];
+
+export const footerSocials = [
+  {name: "Facebook", href: "#facebook"},
+  {name: "Instagram", href: "#instagram"},
+  {name: "Twitter(X)", href: "#twitter"},
+  {name: "LinkedIn", href: "#linkedin"},
+  {name: "Tiktok", href: "#instagram"},
+];
+
+export const footerProductsNav = [
+  {name: "Home", href: "#"},
+  {name: "Solutions", href: "#solutions"},
+  {name: "About Us", href: "#about"},
+  {name: "FAQ", href: "#faq"},
+
+]

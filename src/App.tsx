@@ -5,6 +5,7 @@ import Solutions from "./components/Solutions.tsx";
 import About from "./components/About.tsx";
 import WhyChose from "./components/WhyChose.tsx";
 import FAQ from "./components/FAQ.tsx";
+import Footer from "./components/Footer.tsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <WhyChose />
       <FAQ />
+      <Footer />
     </div>
   );
 }
