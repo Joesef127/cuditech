@@ -1,10 +1,25 @@
-import {footerNavItems, footerProductsNav, footerSocials} from "../data.ts";
+import { footerNavItems, footerProductsNav, footerSocials } from "../data.ts";
+import { useState, useEffect } from "react"; // <-- Add this line
 
 const Footer = () => {
   const footerNavLinks = [
-    {heading: "Product", links: footerProductsNav},
-    {heading: "Social", links: footerSocials},
+    { heading: "Product", links: footerProductsNav },
+    { heading: "Social", links: footerSocials },
   ];
+
+  const [showScroll, setShowScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScroll(window.scrollY > 200);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <footer className="flex items-center justify-center w-full overflow-hidden">
@@ -80,8 +95,7 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div
-          className="flex flex-col sm:flex-row items-center justify-center sm:justify-between w-full gap-2 border-t border-[#EAECF0] pt-8">
+        <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between w-full gap-2 border-t border-[#EAECF0] pt-8">
           <p className="text-[#98A2B3] text-center sm:text-start text-sm sm:text-base leading-5 sm:leading-6">
             &copy; {new Date().getFullYear()} Cuditech Services. All rights
             reserved.
@@ -99,6 +113,28 @@ const Footer = () => {
           </nav>
         </div>
       </div>
+      
+      {/* Scroll to Top Button */}
+      {showScroll && (
+        <button
+          onClick={scrollToTop}
+          aria-label="Scroll to top"
+          className="fixed z-50 bottom-8 right-8 bg-[#1A73E8] text-white p-3 rounded-full shadow-lg animate-bounce hover:bg-[#1669C1] transition duration-300"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="feather feather-arrow-up"
+          >
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+        </button>
+      )}
     </footer>
   );
 };
