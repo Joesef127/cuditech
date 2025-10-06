@@ -22,7 +22,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="flex items-center justify-center w-full overflow-hidden">
+    <footer className="flex items-center justify-center w-full overflow-hidden pb-6">
       <div className="w-[95%] max-w-[1200px] mx-auto flex flex-col py-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start justify-between w-full gap-4">
           <div className="md:max-w-80 flex flex-col gap-4 mb-8 col-span-1">
@@ -113,13 +113,13 @@ const Footer = () => {
           </nav>
         </div>
       </div>
-      
+
       {/* Scroll to Top Button */}
       {showScroll && (
         <button
           onClick={scrollToTop}
           aria-label="Scroll to top"
-          className="fixed z-50 bottom-8 right-8 bg-[#1A73E8] text-white p-3 rounded-full shadow-lg animate-bounce hover:bg-[#1669C1] transition duration-300"
+          className="fixed z-50 bottom-0 right-2 bg-[#1A73E8] text-white p-1.5 lg:p-2.5 rounded-full shadow-lg animate-bounce hover:bg-[#1669C1] transition duration-300"
         >
           <svg
             width="24"
