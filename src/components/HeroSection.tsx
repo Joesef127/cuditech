@@ -21,15 +21,15 @@ const HeroSection = () => {
           <div className="h-full flex items-center justify-between gap-4">
             <Button
               children="Explore our services"
-              className="bg-[#000513] hover:bg-transparent border border-[#101828]  text-xs sm:text-base leading-6 text-white hover:text-[#101828] py-1.5 px-3 sm:py-4 sm:px-7 rounded-full"
+              className="bg-[#1A73E8] hover:bg-transparent border border-[#1A73E8]  text-xs sm:text-base leading-6 text-white hover:text-[#1A73E8] py-2.5 px-5 sm:py-4 sm:px-8 rounded-full"
             />
-            <Button
+            {/* <Button
               children="Book a demo"
               className="bg-transparent hover:bg-[#000513] border border-[#101828]  text-xs sm:text-base leading-6 text-[#101828] hover:text-white py-1.5 px-3 sm:py-4 sm:px-7 rounded-full"
-            />
+            /> */}
           </div>
         </div>
-        <div className="bg-cover bg-top bg-no-repeat w-full h-[320px] sm:h-[400px] md:h-[480px] lg:h-[620px] xl:h-[716px]" style={{backgroundImage: `url(${hero_image})`}}></div>
+        <div className="bg-cover bg-top bg-no-repeat w-full h-[360px] sm:h-[400px] md:h-[420px] lg:h-[596px] rounded-3xl" style={{backgroundImage: `url(${hero_image})`}}></div>
       </div>
     </section>
   );

@@ -3,12 +3,15 @@ import { testimonialsData, whyChoseData } from "../data.ts";
 
 const WhyChose = () => {
   return (
-    <div id="why-us" className="w-full py-20">
+    <div id="why-us" className="w-full py-20 overflow-hidden">
+      {/* WHY CHOOSE SECTION */}
       <div className="w-[90%] max-w-[1200px] mx-auto flex flex-col items-center justify-center">
         <SectionIntro header="Why Choose Us" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 mt-10">
+
+        {/* Desktop Grid */}
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 mt-10">
           {whyChoseData.map((item, index) => {
-            // Custom grid placement
+            // custom placements
             let gridStyles = "";
             if (index === 0) gridStyles = "md:row-span-2 md:col-span-1";
             if (index === 1)
@@ -43,35 +46,75 @@ const WhyChose = () => {
                     {item.desc}
                   </p>
                 </div>
-                <img src={item.image} alt="background image" className="" />
+                <img src={item.image} alt="background image" />
               </div>
             );
           })}
         </div>
+
+        {/* Mobile Carousel */}
+        <div className="flex md:hidden gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide mt-10 pb-4 w-[90%] max-w-[1200px] mx-auto">
+          {whyChoseData.map((item, index) => (
+            <div
+              key={index}
+              className={`w-full flex-shrink-0 flex flex-col items-center justify-between pt-10 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ${item.bgColor} snap-center`}
+            >
+              <div className="px-6">
+                <h3
+                  className={`text-xl font-semibold mb-2 ${
+                    index === 0 || index === 3 ? "text-white" : "text-[#101828]"
+                  }`}
+                >
+                  {item.title}
+                </h3>
+                <p
+                  className={`text-sm ${
+                    index === 0 || index === 3
+                      ? "text-white/90"
+                      : "text-gray-600"
+                  }`}
+                >
+                  {item.desc}
+                </p>
+              </div>
+              <img src={item.image} alt="background image" />
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="py-20 bg-[#F9F9F9] w-full">
-        <div className="w-[90%] max-w-[1200px] mx-auto flex flex-col items-center justify-center gap-16">
-          <SectionIntro
-            header="What Clients say about us"
-            customClass="max-w-[637px]"
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {testimonialsData.map((item, index) => {
-              return (
-                <div key={index} className="bg-white py-6 px-6 md:py-8 md:px-6 lg:py-16 lg:px-12 xl:px-16 flex flex-col gap-10 lg:gap-16 rounded-2xl justify-between items-start">
-                  <h3 className="font-medium text-[#1A1A1A] sm:text-base lg:text-[20px] leading-6 align-middle">{item.text}</h3>
-                  <div className="flex justify-between items-center gap-8 w-full">
-                    <div>
-                      <h5 className="sm:text-base lg:text-[20px] leading-[30px] align-middle font-bold text-[#1A1A1A] ">{item.name}</h5>
-                      <p className="text-[#1A1A1A]/80 text-xs sm:text-sm md:text-xs lg:text-base leading-6 align-middle">{item.position}</p>
-                    </div>
-                    <span className="rounded-full">
-                      <img src={item.image} alt="dp" className="w-16 h-16" />
-                    </span>
+
+      {/* TESTIMONIALS SECTION */}
+      <div className="py-20 bg-[#F9F9F9] w-full flex flex-col items-center justify-center gap-10 lg:gap-16 ">
+        <SectionIntro
+          header="What Clients say about us"
+          customClass="max-w-[637px] "
+        />
+        <div className="w-[90%] max-w-[1200px] mx-auto overflow-x-scroll sm:overflow-x-hidden scroll-smooth snap-x snap-mandatory scrollbar-hide">
+          {/* Horizontally scrollable testimonials */}
+          <div className="grid grid-cols-2 gap-6 w-max sm:w-full pb-4">
+            {testimonialsData.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white py-6 px-6 md:py-8 md:px-6 lg:py-16 lg:px-12 xl:px-16 flex flex-col gap-10 lg:gap-16 rounded-2xl justify-between items-start max-w-[340px] sm:max-w-full snap-center"
+              >
+                <h3 className="font-medium text-[#1A1A1A] sm:text-base lg:text-[20px] leading-6 align-middle">
+                  {item.text}
+                </h3>
+                <div className="flex justify-between items-center gap-8 w-full">
+                  <div>
+                    <h5 className="sm:text-base lg:text-[20px] leading-[30px] align-middle font-bold text-[#1A1A1A] ">
+                      {item.name}
+                    </h5>
+                    <p className="text-[#1A1A1A]/80 text-xs sm:text-sm md:text-xs lg:text-base leading-6 align-middle">
+                      {item.position}
+                    </p>
                   </div>
+                  <span className="rounded-full">
+                    <img src={item.image} alt="dp" className="w-16 h-16" />
+                  </span>
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
       </div>

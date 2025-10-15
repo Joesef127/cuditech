@@ -10,6 +10,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 body {
   font-family: 'Inter', sans-serif;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* hide scrollbar throughout website */
+::-webkit-scrollbar {
+  display: none;
 }
 
 @layer utilities {

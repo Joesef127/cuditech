@@ -12,7 +12,7 @@ const SponsorRow = () => {
               src={img}
               alt="logo"
               key={i}
-              className="mx-4 hover:grayscale grayscale-0 transition-all duration-300 inline-block w-20 md:w-28 lg:h-12"
+              className="mx-6 md:mx-8 hover:grayscale grayscale-0 transition-all duration-300 inline-block w-28 md:w-36 lg:h-12"
             />
           ))}
         </div>

@@ -19,7 +19,7 @@ const SectionIntro = ({
     >
       <h1
         className={`
-        text-3xl sm:text-4xl md:text-5xl lg:text-6xl 
+        text-4xl md:text-5xl lg:text-6xl 
          lg:max-w-[970px] font-bold text-center
         text-[#101828] relative flex justify-center flex-row-reverse
         ${headerStyle}`}

@@ -23,7 +23,7 @@ const FAQ = () => {
             {faqData.map((item, index) => (
               <div
                 key={index}
-                className="border-b-[0.5px] border-gray-200 last:border-b-0"
+                className="border-b-[0.5px] border-gray-200"
                 data-aos="fade-up"
               >
                 <button
@@ -82,7 +82,7 @@ const FAQ = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 grid-rows-2 md:grid-rows-1 md:grid-cols-2 w-full">
+      <div className="grid grid-cols-1 grid-rows-2 md:grid-rows-1 md:grid-cols-2 w-full pt-20">
         <div className="bg-[#1A73E8] py-12 sm:py-20 lg:py-28 px-10 sm:px-14 lg:px-16 xl:px-28 flex flex-col gap-8">
           <h1 className="text-white text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl sm:leading-12 lg:leading-16 xl:leading-[72px] font-bold">
             Ready to Pursue Opportunity?
