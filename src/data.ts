@@ -107,13 +107,13 @@ export const whyChoseData = [
 
 export const testimonialsData = [
   {
-    text: "The integration was seamless, and the AI insights are spot-on. We finally have clarity on processes that used to be messy and expensive to manage.",
-    name: "Maria L",
-    position: " CTO of a Retail Tech Company",
+    text: "“Scheduling is now effortless. Clients book themselves, and I never miss an appointment.”",
+    name: "Stephen Joseph",
+    position: "Spa and Hair Stylist",
     image: dp,
   },
   {
-    text: "Switching to [Your SaaS] saved our team countless hours. What used to take days of manual work now happens in minutes. It’s become the backbone of how we run operations",
+    text: "“Scheduling is now effortless. Clients book themselves, and I never miss an appointment.”",
     name: "Maria L",
     position: " CTO of a Retail Tech Company",
     image: dp,
